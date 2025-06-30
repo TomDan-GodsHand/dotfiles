@@ -139,7 +139,7 @@
     },
     {
         "name": "bottombar",
-        "output": "",
+        "output": "HDMI-A-1",
         "layer": "top",
         "position": "bottom",
         "height": 30,
