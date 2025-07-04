@@ -19,12 +19,7 @@
             "hyprland/window"
         ],
         "modules-right": [
-            "network#vpn",
-            "network#wifi",
-            "network#ethernet",
-            "network#disconnected",
             "custom/weather",
-            "clock",
             "custom/poweroff"
         ],
         "hyprland/window": {
@@ -151,6 +146,7 @@
         ],
         "modules-right": [
             "tray",
+            "clock",
             "custom/notification"
         ],
         "tray": {
@@ -167,6 +163,12 @@
             "app_ids-mapping": {
                 "gnome-terminal-server": "org.gnome.Terminal"
             }
+        },
+        "clock": {
+            "interval": 1,
+            "format": "<b>{:%H:%M:%S}</b>",
+            "format-alt": "{:%Y-%m-%d}",
+            "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
         },
         "custom/notification": {
             "tooltip": false,
