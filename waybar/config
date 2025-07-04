@@ -42,17 +42,17 @@
         "cpu": {
             "format": " {usage}%",
             "tooltip": false,
-            "on-click": "kitty --class dotfiles-floating -e btop"
+            "on-click": "missioncenter"
         },
         "disk": {
             "format": " {}%",
             "tooltip-format": "{used} / {total} used",
-            "on-click": "kitty --class dotfiles-floating -e btop"
+            "on-click": "missioncenter"
         },
         "memory": {
             "format": " {}%",
             "tooltip-format": "{used:0.1f}G / {total:0.1f}G used",
-            "on-click": "kitty --class dotfiles-floating -e btop"
+            "on-click": "missioncenter"
         },
         "temperature": {
             "critical-threshold": 80,
@@ -64,7 +64,7 @@
                 "",
                 ""
             ],
-            "on-click": "kitty --class dotfiles-floating -e btop"
+            "on-click": "missioncenter"
         },
         "network#disconnected": {
             "tooltip-format": "No connection!",
