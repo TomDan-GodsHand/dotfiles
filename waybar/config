@@ -118,7 +118,7 @@
                     ""
                 ]
             },
-            "on-click": "pavucontrol"
+            "on-click": "pwvucontrol"
         },
         "custom/weather": {
             "return-type": "json",
@@ -139,6 +139,7 @@
         "position": "bottom",
         "height": 30,
         "modules-left": [
+            "custom/menu",
             "hyprland/workspaces"
         ],
         "modules-center": [
@@ -169,6 +170,10 @@
             "format": "<b>{:%H:%M:%S}</b>",
             "format-alt": "{:%Y-%m-%d}",
             "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+        },
+        "custom/menu": {
+            "format": " 󰣇 ",
+            "on-click": "bash ~/.config/rofi/launchers/type-3/launcher.sh"
         },
         "custom/notification": {
             "tooltip": false,
